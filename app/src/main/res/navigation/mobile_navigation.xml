@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="cc.spellbook.freecarparks.ui.Login.LoginFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="cc.spellbook.freecarparks.ui.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="cc.spellbook.freecarparks.ui.maps.MapFragment"
+        android:label="@string/menu_maps"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/nav_addmap"
+        android:name="cc.spellbook.freecarparks.ui.add_map.add_map"
+        android:label="@string/menu_addmap"
+        tools:layout="@layout/fragment_add_map" />
+</navigation>
